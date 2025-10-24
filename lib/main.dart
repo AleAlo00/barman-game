@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flame/game.dart';
+import 'game/barman_game.dart'; 
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  // Blocca l’orientamento in orizzontale
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.landscapeLeft,
+    DeviceOrientation.landscapeRight,
+  ]);
+
+  // Inizializza Supabase
   await Supabase.initialize(
     url: 'https://iajwjbhrwosjekjtfagf.supabase.co',
     anonKey:
@@ -23,7 +32,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Barman Game',
       theme: ThemeData.dark(),
-      
+
+      home: GameWidget(game: BarmanGame()),
     );
   }
 }
