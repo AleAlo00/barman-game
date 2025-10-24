@@ -1,6 +1,6 @@
 # Barman Game – Roadmap di Sviluppo
 Gioco gestionale realizzato con Flutter + Flame + Supabase  
-Autore: Ale
+Autore: AleAlo00
 
 ---
 
@@ -84,11 +84,3 @@ Autore: Ale
 - [ ] Pubblicare la prima versione  
 
 ---
-
-### Come aggiornare la roadmap
-Ogni volta che completi una parte:
-```bash
-git add ROADMAP.md
-git commit -m "Aggiornata roadmap: completata Fase X"
-git push
-```
