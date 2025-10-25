@@ -15,11 +15,11 @@ Autore: AleAlo00
 ---
 
 ## Fase 2 — Base del gioco
-- [ ] Configurare `BarmanGame` con camera fissa 1280×720  
-- [ ] Aggiungere sfondo del bar (immagine o colore base)  
-- [ ] Aggiungere banco del bar (`BancoComponent`)  
-- [ ] Aggiungere primo cliente (sprite statico)  
-- [ ] Creare `ClienteComponent` con attributi (nome, drinkPreferito, frase)  
+- [x] Configurare `BarmanGame` con camera fissa 1280×720  
+- [x] Aggiungere sfondo del bar (immagine o colore base)  
+- [x] Aggiungere banco del bar (`BancoComponent`)  
+- [x] Aggiungere primo cliente (sprite statico)  
+- [x] Creare `ClienteComponent` con attributi (nome, drinkPreferito, frase)  
 - [ ] Caricare drink da Supabase  
 - [ ] Creare bottoni o icone per drink disponibili  
 - [ ] Implementare logica ordine → drink corretto = +soldi / errore = -tempo  
